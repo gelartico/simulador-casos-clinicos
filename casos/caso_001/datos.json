@@ -1,1 +1,60 @@
-
+{
+  "id": "caso_001",
+  "perfil": {
+    "sexo": "masculino",
+    "color": "amarillo",
+    "edad": 64,
+    "motivo_consulta": "Dolor epigástrico persistente, saciedad precoz y pérdida de 8 kg de peso en los últimos 3 meses."
+  },
+  "prompt_paciente": "Eres un robot amarillo de 64 años. Llegas a la consulta de medicina interna sintiéndote muy débil, cansado y con dolor sordo en la boca del estómago que empeora al comer. Cuéntale al médico que apenas comes unos bocados y ya te sientes lleno (saciedad precoz), tienes náuseas frecuentes y la ropa te queda holgada porque perdiste 8 kilos en 3 meses sin hacer dieta. Si te preguntan antecedentes, di que tienes hipertensión arterial desde hace 10 años tratada con enalapril 10 mg/día, diabetes mellitus tipo 2 diagnosticada hace 5 años en tratamiento con metformina 850 mg cada 12 horas, fumaste un paquete diario durante 35 años y siempre tuviste pirosis/gastritis por la que te dijeron hace años que tenías reflujo severo. NUNCA menciones diagnósticos médicos, nombres técnicos de tumores ni entregues resultados de estudios por tu cuenta.",
+  "signos_vitales_iniciales": {
+    "pa": "135/85 mmHg",
+    "fc": "88 lpm",
+    "fr": "18 rpm",
+    "sat": "97%",
+    "temp": "36.7 °C"
+  },
+  "estudios_disponibles": {
+    "laboratorio_sangre": {
+      "tipo": "texto",
+      "titulo": "Laboratorio General y Marcadores Tumorales",
+      "valores": {
+        "Hemoglobina": "9.1 g/dL (Anemia microcítica hipocrómica)",
+        "Hematocrito": "28.5%",
+        "VCM": "74 fL",
+        "Ferritina": "12 ng/mL (Ferropenia severa)",
+        "Leucocitos": "6.800 /mm³",
+        "Plaquetas": "310.000 /mm³",
+        "Glucemia": "138 mg/dL",
+        "Creatinina": "0.95 mg/dL",
+        "SOMF (Sangre oculta en heces)": "Positiva (+)",
+        "CEA": "14.2 ng/mL (Elevado)"
+      }
+    },
+    "veda": {
+      "tipo": "imagen",
+      "titulo": "Videoendoscopía Digestiva Alta (VEDA)",
+      "url_archivo": "casos/caso_001/VEDA ESOFAGO DE BARRET.png",
+      "informe": "A nivel del tercio distal esofágico y unión esofagogástrica se evidencia mucosa asalmonada compatible con esófago de Barrett con lesión ulcerovegetante de bordes irregulares. Se toman múltiples biopsias compatibles con Adenocarcinoma."
+    },
+    "pet_scan": {
+      "tipo": "imagen",
+      "titulo": "PET-CT Corporal Total",
+      "url_archivo": "casos/caso_001/PET ESOFAGO DE BARRET.png",
+      "informe": "Hipermetabolismo glucídico focal intenso en tercio distal esofágico coincidente con lesión tumoral primaria, asociado a adenopatías hipermetabólicas periesofágicas y celíacas."
+    }
+  },
+  "resolucion": {
+    "diagnostico_correcto": "Adenocarcinoma de esófago distal sobre esófago de Barrett",
+    "tratamiento_clave": [
+      "estadificación completa",
+      "quimioterapia o radioquimioterapia neoadyuvante según estadio",
+      "evaluación por equipo multidisciplinario de oncología y cirugía",
+      "soporte nutricional"
+    ],
+    "contraindicaciones": [
+      "AINEs por riesgo de hemorragia",
+      "alta médica sin seguimiento endoscópico/oncológico"
+    ]
+  }
+}
